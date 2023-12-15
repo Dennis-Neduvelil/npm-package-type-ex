@@ -1,0 +1,24 @@
+{
+  "name": "@dennis-neduvelil/type-ex",
+  "version": "1.0.4",
+  "description": "A simple tool to create typescript-express app",
+  "bin": {
+    "type-ex": "bin/type-ex"
+  },
+  "keywords": [
+    "typescript",
+    "express",
+    "ts-express",
+    "typescript express",
+    "nodejs"
+  ],
+  "files": [
+    "**/*",
+    "!package-lock.json"
+  ],
+  "author": "Dennis Mathew",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^11.1.0"
+  }
+}
