@@ -1,6 +1,6 @@
 {
-  "name": "@dennis-neduvelil/type-ex",
-  "version": "1.0.4",
+  "name": "type-ex",
+  "version": "1.1.0",
   "description": "A simple tool to create typescript-express app",
   "bin": {
     "type-ex": "bin/type-ex"
