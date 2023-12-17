@@ -51,11 +51,10 @@ function printErrorCreateApp(errorMessage) {
 }
 
 function createAppMain(args) {
-  if (args[0] === "createApp" && !args[1].startsWith("--")) {
-    printErrorCreateApp(
-        "Invalid input."
-      );
+  if (args[0] === "createApp" && args[1] && !["--help", "--name", "--outDir", "--port"].includes(args[1])) {
+    printErrorCreateApp("Invalid input.");
   }
+  
   if (args[0] === "createApp" && args[1] !== "--help") {
     let nameIndex = args.indexOf("--name");
     let outDirIndex = args.indexOf("--outDir");
@@ -100,7 +99,7 @@ function createAppMain(args) {
     initializeProject(appName);
 
     console.log("\n\nHurrey 🎉🎉🎉 Project setup completed\n\n");
-    console.log("We suggest you to begin by typing:")
+    console.log("We suggest you to begin by typing:");
     console.log(
       appName === "." ? "\nnpm run dev\n" : `\ncd ${appName}\nnpm run dev\n`
     );
