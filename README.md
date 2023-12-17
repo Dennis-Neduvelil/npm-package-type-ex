@@ -22,7 +22,7 @@ npx type-ex createApp
 You can customize the app by providing optional parameters:
 
 ```bash
-npx assist createApp --name myApp --outDir ./myOutput --port 5000
+npx type-ex createApp --name myApp --outDir ./myOutput --port 5000
 ```
 - --name: Set the app name (optional).
 - --outDir: Set the output directory (optional, default is "./dist").
